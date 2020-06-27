@@ -1,3 +1,7 @@
+body {
+    box-sizing: border-box;
+}
+
 .jumbotron {
     margin: 0px auto;
     padding: 70px 30px;
@@ -129,7 +133,17 @@ footer {
     background-color: #F9F9F9;
   }
 
-  header {
-    background-image: url(../img/bg-callout.jpg);
-    background-repeat: no-repeat;    
+  #backimg { 
+    background: url(../img/bg-callout.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
   }
+  nav ul li div {
+      border-radius: 10px;
+  }
+
+  @media screen and (max-width: 600px) {
+    img.alignleft, img.alignright {
+       width: 50%;
+    }
+ } 
