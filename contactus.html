@@ -13,7 +13,7 @@
         <!-- endbuild -->
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container">
               <a class="navbar-brand font-weight-bold" href="./index.html"> Hiren Stationers</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -22,16 +22,19 @@
               <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a>
+                    <a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span>  Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./products.html"><span class="fa fa-product-hunt fa-lg"></span> Products</a>
+                    <a class="nav-link" href="./products.html"><span class="fa fa-product-hunt fa-lg"></span>  Products</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact Us</a>
+                    <a class="nav-link active" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>  Contact Us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./aboutus.html"><span class="fa fa-info-circle fa-lg"></span> About Us</a>
+                    <a class="nav-link" href="./aboutus.html"><span class="fa fa-info-circle fa-lg"></span>  About Us</a>
+                  </li>
+                  <li class="d-lg-none d-md-none d-xs-none nav-item">
+                    <a class="btn btn-primary btn-primary" href="tel:9824918499" role="button"><span class="fa fa-phone fa-lg"></span>  Call Us!</a>
                   </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
@@ -50,12 +53,96 @@
             </div>
           </nav>
 
-          <header class="bg-primary text-white">
-            <div class="container text-center">
-              <h1>Contact Us!</h1>
-              <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
-            </div>
-          </header>
+          <div class="container">
+              <div class="row">
+                <ol class="col-12 breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Contact Us</li>
+                </ol>
+              </div>
+
+              <section class="mb-4">
+
+                <!--Section heading-->
+                <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+                <!--Section description-->
+                <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. We will come back to you within
+                    a matter of hours to help you.</p>
+            
+                <div class="row">
+            
+                    <!--Grid column-->
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+            
+                            <!--Grid row-->
+                            <div class="row">
+            
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="Name">
+                                        <label for="name" class="">Your name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control" placeholder="Email">
+                                        <label for="email" class="">Your email</label>
+                                    </div>
+                                </div>            
+                            </div>
+            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="row">
+                                <div class="col-md-12">
+            
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="7" class="form-control md-textarea" placeholder="Your Message . . ."></textarea>
+                                        <label for="message">Your message</label>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </form>
+            
+                        <div class="text-center text-md-center">
+                            <a class="btn btn-primary" onclick="validateForm();">Send</a>
+                        </div>
+                        <div class="status text-danger"></div>
+                    </div>
+            
+                    <div class="col-md-3 text-center">
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fa fa-map-marker fa-2x"></i>
+                                <p><a href="https://goo.gl/maps/1sKLTre3h4PC7SKX6" target="blank">Jamesh Plaza Complex, Opp. SBI Bank Beside D. N High School, Anand - 388001 </a></p>
+                            </li>
+            
+                            <li><i class="fa fa-phone mt-4 fa-2x"></i>
+                                <p><a href="tel:9106744978">+91 9106744978</a></p>
+                                <a href="tel:9106744978">+91 9879014644</a>
+                            </li>
+            
+                            <li><i class="fa fa-envelope mt-4 fa-2x"></i>
+                                <p><a href="mailto:hirenstationers2000@gmail.com"> HirenStationers2000@gmail.com </a></p>
+                            </li>
+                        </ul>
+                    </div>
+            
+                </div>
+            
+            </section>
+            
+
+          </div>
 
           <footer class="footer-middle">
             <div class="container">
@@ -64,7 +151,7 @@
                   <!--Column1-->
                   <div class="footer-pad">
                     <h4><Address class=" font-weight-lighter"> Address </Address></h4>
-                    <span class="fa fa-map-pin fa-lg"></span>
+                    <span class="fa fa-map-marker"></span>
                     <a href="https://goo.gl/maps/1sKLTre3h4PC7SKX6" target="blank">Jamesh Plaza Complex, Opp. SBI Bank Beside D. N High School, Anand - 388001</a>
                   </div>
                 </div>
@@ -80,7 +167,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-12">
                   <!--Column1-->
                   <div class="footer-pad">
                     <h4><Address class=" font-weight-lighter"> Reviews </Address></h4>
@@ -91,10 +178,11 @@
                   </div>
                 </div>
                   <div class="col-md-3">
-                      <h4>Follow Us!</h4>
+                    <h4><Address class=" font-weight-lighter"> Follows Us! </Address></h4>
                       <ul class="social-network social-circle">
                        <li><a href="https://www.facebook.com/Hiren-Stationers-Gift-Shop-227809674070012/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                        <li><a href="https://www.instagram.com/hirenstationers/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                       <li><a href="mailto:hirenstationers2000@gmail.com" class="icoMail" title="Mail"><i class="fa fa-envelope"></i></a></li>
                       </ul>				
                   </div>
               </div>
@@ -103,8 +191,6 @@
                       <p class="text-center">&copy; Copyright 2020 - Hiren Stationers.  All rights reserved.</p>
                   </div>
               </div>
-          
-          
             </div>
           </footer>
 

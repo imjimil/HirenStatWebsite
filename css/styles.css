@@ -2,25 +2,13 @@ body {
     box-sizing: border-box;
 }
 
-.jumbotron {
-    margin: 0px auto;
-    padding: 70px 30px;
-    color: floralwhite;
-    background: #16222A;
-    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
-    background: linear-gradient(59deg, #3A6073, #16222A);
-    color: white;
-}
-
-header {
-    padding: 156px 0 100px;
-}
 
 footer {
     background: #16222A;
     background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
     background: linear-gradient(59deg, #3A6073, #16222A);
     color: white;
+    margin-top: auto;
   }
   
   footer a {
@@ -76,10 +64,15 @@ footer {
   .social-network a.icoInstagram:hover {
     background-color: #fb3958;
   }
+
+  .social-network a.icoMail:hover {
+    background-color: #577be0;
+  }
   
   .social-network a.icoFacebook:hover i,
   .social-network a.icoLinkedin:hover i,
-  .social-network a.icoInstagram:hover i {
+  .social-network a.icoInstagram:hover i,
+  .social-network a.icoMail:hover i {
     color: #fff;
   }
   
@@ -147,3 +140,89 @@ footer {
        width: 50%;
     }
  } 
+
+ .carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.section-title-container {
+  margin-bottom: 1.5em
+}
+
+.section-title {
+  position: relative;
+  -js-display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.section-title span {
+  text-transform: uppercase;
+}
+
+.section-title b {
+  display: block;
+  -ms-flex: 1;
+  flex: 1;
+  height: 2px;
+  opacity: .6;
+  background-color: currentColor;
+}
+
+.section-title-bold-center span,
+.section-title-bold span {
+  border: 2px solid rgba(0, 0, 0, .1);
+  padding: .3em .8em;
+  border-radius: 15px;
+  background-color: #61a0c0;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.zoom {
+  transition: transform .2s; 
+}
+
+.zoom:hover {
+  transform: scale(1.05);
+  margin-bottom: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.textsize {
+  font-size: large;
+  color: #14213b;
+}
+
+.bigfont {
+  font-size: larger;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div.card {
+  padding: 0%;
+}
+
+.myformstyle {
+  color: #14213b;
+}
