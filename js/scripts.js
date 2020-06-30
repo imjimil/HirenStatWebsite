@@ -25,5 +25,6 @@ function validateForm() {
       document.querySelector('.status').innerHTML = "Message cannot be empty";
       return false;
   }
-  document.querySelector('.status').innerHTML = alert("Your Responce has been Submitted")
+  document.querySelector('.status').innerHTML = alert("Your Responce has been Submitted");
+  document.getElementById('contact-form').reset();
 }
